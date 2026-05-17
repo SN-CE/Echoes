@@ -2,13 +2,11 @@
 
 A self-hosted, terminal-based group chat system built in Go.
 
----
 
 ## What is Echoes?
 
 Echoes is a minimal, self-hosted chat system consisting of two binaries — a server and a client. There are no accounts, no cloud, no database, no third-party services. Just a server binary, a port, and an IP address.
 
----
 
 ## How It Works
 
@@ -19,7 +17,6 @@ Echoes is a minimal, self-hosted chat system consisting of two binaries — a se
 
 Messages are broadcast in real time to all connected clients. When a client disconnects, everyone is notified. When the server shuts down, all connections are closed cleanly.
 
----
 
 ## Requirements
 
@@ -28,7 +25,6 @@ No runtime required. Just download and run the binary for your platform.
 - **Linux** : `Echoes` (client), `Echoes_Server` (server)
 - **Windows** : `Echoes.exe` (client), `Echoes_Server.exe` (server)
 
----
 
 ## Usage
 
@@ -60,7 +56,6 @@ or
 Enter the IP or URL of the Echoes Server you wish to connect to - chat.example.com:8080
 ```
 
----
 
 ## Running Over The Internet
 
@@ -71,7 +66,6 @@ If the host is behind **CGNAT** (common with most home ISPs), they won't have a 
 - Use a **VPS** to run the server on a machine with a public IP.
 - Use a **tunnel service** like [Pagekite](https://pagekite.net/) to expose the server through the CGNAT.
 
----
 
 ## Technical Details
 
@@ -79,7 +73,6 @@ If the host is behind **CGNAT** (common with most home ISPs), they won't have a 
 - **Concurrency** : Each client connection runs in its own goroutine. A `sync.RWMutex` protects the shared client map.
 - **TUI** : Built with `tview` and `tcell`
 - **Persistence** : None for now. Chats exist only for the duration of the session. Nothing is written to disk. Later on there might be an option added to store chat history to a text file and recall later. But it will be entirely optional.
----
 
 ## Roadmap
 
@@ -87,7 +80,12 @@ If the host is behind **CGNAT** (common with most home ISPs), they won't have a 
 - [ ] Adding persistence options on both ends, server and client. For now, server only displays a simple log that is not saved.
 - [ ] Tor routing support
 - [ ] Adding a separate channel for commands
+
+
+
 ---
+
+
 
 ## Why
 
@@ -97,7 +95,8 @@ Echoes removes the middleman entirely. Either you or your friends/partners/colle
 
 Once encryption is implemented, the contents of every conversation will be completely opaque to anyone who isn't in it.
 
----
+
+
 
 ## Built With And Thank You To
 

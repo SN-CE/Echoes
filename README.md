@@ -5,7 +5,7 @@ A self-hosted, terminal-based group chat system built in Go.
 
 ## What is Echoes?
 
-Echoes is a minimal, self-hosted chat system consisting of two binaries — a server and a client. There are no accounts, no cloud, no database, no third-party services. Just a server binary, a port, and an IP address.
+Echoes is a minimal, self-hosted chat system consisting of two binaries — a server and a client. There are no accounts, no cloud, no database, no third-party services. Just two binaries, a port, an IP address and your friends. Completely Private.
 
 
 ## How It Works

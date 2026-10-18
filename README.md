@@ -13,7 +13,6 @@ Echoes is a minimal, self-hosted chat system consisting of two binaries — a se
 1. One person runs the server binary. It asks for a port number and starts listening.
 2. Everyone — including the server host — runs the client binary. It asks for the server's IP address or domain name.
 3. Each client picks a username on connect. The list of connected clients will be shown, so pick a unique one.
-4. That's it.
 
 Messages are broadcast in real time to all connected clients. When a client disconnects, everyone is notified. When the server shuts down, all connections are closed cleanly.
 
